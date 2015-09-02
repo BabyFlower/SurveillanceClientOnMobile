@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 小号文本样式 -->
+    <style name="small_text">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <!-- 登录Title样式 -->
+    <style name="title_text_login">
+        <item name="android:textColor">@color/login_title_text</item>
+        <item name="android:textSize">@dimen/middle_text</item>
+        <item name="android:background">@drawable/title_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+
+    </style>
+
+    <!-- 主页Title样式 -->
+    <style name="title_text_main">
+        <item name="android:textColor">@color/main_title_text</item>
+        <item name="android:textSize">@dimen/middle_text</item>
+        <item name="android:background">@color/main_title_gb</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+    </style>
+
+    <!-- 全局Title样式 -->
+    <style name="title_text">
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:textSize">@dimen/middle_text</item>
+        <item name="android:background">@drawable/title_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+    </style>
+
+    <!-- 中号文本样式 -->
+    <style name="middle_text">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/middle_text</item>
+    </style>
+
+    <!-- 公共按钮样式 -->
+    <style name="common_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/common_button_bg</item>
+    </style>
+
+    <!-- 半透明效果 -->
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+</resources>

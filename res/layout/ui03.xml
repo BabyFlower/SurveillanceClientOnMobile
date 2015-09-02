@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/ui03_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ui03_name"
+                style="@style/title_text" />
+
+            <Button
+                android:id="@+id/ui03_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/ui03_speed"
+                    style="@style/small_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/speed" />
+
+                <TextView
+                    style="@style/small_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon" />
+
+                <TextView
+                    style="@style/small_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/ui03_traffic"
+                    style="@style/small_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/traffic" />
+
+                <TextView
+                    style="@style/small_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon" />
+
+                <TextView
+                    style="@style/small_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <FrameLayout
+            android:id="@+id/framecontainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/ui03_center_tv"
+            style="@style/middle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/hidecontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tab_default"
+        android:orientation="vertical"
+        android:stretchColumns="1" >
+
+        <LinearLayout
+            android:id="@+id/ui03_bar_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:baselineAligned="true"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/currenttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/time_count"
+                android:textColor="#CCCCCC"
+                android:textSize="15sp" />
+
+            <SeekBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="1000"
+                android:maxHeight="6dp"
+                android:minHeight="6dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@drawable/seek_thumb"
+                android:thumbOffset="10dip" />
+
+            <TextView
+                android:id="@+id/totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.0"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:text="@string/time_count"
+                android:textColor="#CCCCCC"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#333333"
+            android:visibility="gone" />
+
+        <com.anviz.scom.view.ScaleView
+            android:id="@+id/ui03_sv"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <!-- 播放暂停 -->
+
+            <ImageView
+                android:id="@+id/ui03_media_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/pause" />
+
+            <!-- 本地录像 -->
+
+            <ImageView
+                android:id="@+id/ui03_local_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/local_video_bg"
+                android:visibility="gone" />
+            <!-- 设备快照 -->
+
+            <ImageView
+                android:id="@+id/ui03_snapshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/snapshot_bg"
+                android:visibility="gone" />
+
+            <!-- PTZ控制 -->
+
+            <ImageView
+                android:id="@+id/ui03_ptz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/ptz_colse"
+                android:visibility="gone" />
+
+            <!-- 麦克风控制 -->
+
+            <ImageView
+                android:id="@+id/ui03_microphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/microphone_colse"
+                android:visibility="gone" />
+
+            <!-- 喇叭控制 -->
+
+            <ImageView
+                android:id="@+id/ui03_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/frequency_colse"
+                android:visibility="gone" />
+            <!-- 剪辑 -->
+
+            <ImageView
+                android:id="@+id/ui03_editing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/edit"
+                android:visibility="gone" />
+            <!-- 分享 -->
+
+            <ImageView
+                android:id="@+id/ui03_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/share_bg"
+                android:visibility="gone" />
+            <!-- 删除 -->
+
+            <ImageView
+                android:id="@+id/ui03_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/description"
+                android:src="@drawable/playbacdd_bg"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Chronometer
+        android:id="@+id/ui03_ch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff0000"
+        android:textSize="12pt"
+        android:visibility="gone" />
+
+</RelativeLayout>

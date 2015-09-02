@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="my_anviz_id">MyAnviz ID</string>
+	<string name="password">Password</string>
+	<string name="repeat_password">Repeat password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="automatic_logon">Automatic logon</string>
+    <string name="login">Login</string>
+    <string name="verifycode">Verify code</string>
+    <string name="register">Register</string>
+    <string name="device_login">Device login</string>
+    <string name="create_a_myanviz_id">Create a MyAnviz ID</string>
+    <string name="email_or_username">E-mail/Username</string>
+    <string name="terms_conditions">Terms Conditions</string>
+    <string name="i_agree_with">I agree with</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="add_device">Add Device</string>
+    <string name="Live">Live</string>
+    <string name="PlayBack">PlayBack</string>
+    <string name="event">Event</string>
+    <string name="app_name">IntelliSight</string>
+    <string name="setting">Setting</string>
+    <string name="event_info">Event Info</string>
+	<string name="delete">Delete</string>
+	<string name="save_as">Save as</string>
+    <string name="keep">Keep</string>
+    <string name="no_keep">No Keep</string>
+    <string name="time_group">Time</string>
+    <string name="event_group">Event</string>
+    <string name="device_group">Device </string>
+    <string name="remote">remote</string>
+    <string name="Local">Local</string>
+    <string name="no_record">No record</string>
+    <string name="device_manage">Device manage</string>
+    <string name="feature_set">Feature set</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="snapshot_images">Snapshot images</string>
+    <string name="information">Information</string>
+    <string name="mobile_traffic_statistics">Mobile Traffic Statistics</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">Help</string>
+    
+    
+    <string name="enter_UID">输入UID</string>
+    <string name="start">开始</string>
+    <string name="scan">扫描</string>
+    <string name="cancel">取消</string>
+    <string name="account">账号</string>
+    <string name="registration_agreement">注册协议</string>
+    <string name="agree_deal">我已阅读并同意</string>
+    <string name="add">添加</string>
+    <string name="description">描述</string>
+    <string name="event_filtering">事件过滤</string>
+    <string name="event_filtering_colon">事件过滤:</string>
+    <string name="devsel_colon">设备选择:</string>
+    <string name="time_filter_colon">时间过滤:</string>
+    <string name="end_colon">结束:</string>
+    <string name="start_colon">开始:</string>
+    <string name="colon">:</string>
+    <string name="confirm">确定</string>
+    <string name="click_to_choose_time">点击选择时间</string>
+    <string name="query">查询</string>
+    <string name="event_query_result">事件查询结果</string>
+    <string name="serial_number">序列号</string>
+    <string name="senior_add">高级添加</string>
+    <string name="advanced_add_device">高级添加设备</string>
+    <string name="find_add">查找添加</string>
+    <string name="find_add_device">查找添加设备</string>
+    <string name="enter_the_application">进入应用</string>
+    <string name="speed">速度</string>
+    <string name="traffic">流量</string>
+    <string name="time_count">00:00</string>
+    
+    <string name="ip">IP</string>
+    <string name="port">PORT</string>
+    <string name="user">USER</string>
+    <string name="pwd">PWD</string>
+    <string name="uuid">UUID</string>
+    <string name="mac">MAC</string>
+
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anviz.scom"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="12" 
+        android:maxSdkVersion="18"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.anviz.scom.ui.UI04_LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.anviz.scom.ui.UI02_CaptureActivity" />
+        <activity
+            android:name="com.anviz.scom.ui.UI03_AnvizPlayerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="video/*" />
+                <data android:mimeType="*/rmvb" />
+                <data android:mimeType="application/x-quicktimeplayer*" />
+                <data android:mimeType="application/vnd.dvd*" />
+                <data android:mimeType="application/vnd.3gp*" />
+                <data android:mimeType="application/3gpp*" />
+                <data android:mimeType="application/vnd.rn-realmedia*" />
+                <data android:mimeType="application/sdp" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+                <data android:pathPattern=".*mkv" />
+                <data android:pathPattern=".*MKV" />
+                <data android:pathPattern=".*flv" />
+                <data android:pathPattern=".*FLV" />
+                <data android:pathPattern=".*wmv" />
+                <data android:pathPattern=".*WMV" />
+                <data android:pathPattern=".*ts" />
+                <data android:pathPattern=".*TS" />
+                <data android:pathPattern=".*rm" />
+                <data android:pathPattern=".*RM" />
+                <data android:pathPattern=".*rmvb" />
+                <data android:pathPattern=".*RMVB" />
+                <data android:pathPattern=".*webm" />
+                <data android:pathPattern=".*WEBM" />
+                <data android:pathPattern=".*mov" />
+                <data android:pathPattern=".*MOV" />
+                <data android:pathPattern=".*mpg" />
+                <data android:pathPattern=".*MPG" />
+                <data android:pathPattern=".*dat" />
+                <data android:pathPattern=".*DAT" />
+                <data android:pathPattern=".*vstream" />
+                <data android:pathPattern=".*VSTREAM" />
+                <data android:pathPattern=".*mpeg" />
+                <data android:pathPattern=".*MPEG" />
+                <data android:pathPattern=".*f4v" />
+                <data android:pathPattern=".*F4V" />
+                <data android:pathPattern=".*avi" />
+                <data android:pathPattern=".*AVI" />
+                <data android:pathPattern=".*ogv" />
+                <data android:pathPattern=".*OGV" />
+                <data android:pathPattern=".*dv" />
+                <data android:pathPattern=".*DV" />
+                <data android:pathPattern=".*divx" />
+                <data android:pathPattern=".*DIVX" />
+                <data android:pathPattern=".*vob" />
+                <data android:pathPattern=".*VOB" />
+                <data android:pathPattern=".*asf" />
+                <data android:pathPattern=".*ASF" />
+                <data android:pathPattern=".*3gp" />
+                <data android:pathPattern=".*3GP" />
+                <data android:pathPattern=".*3gpp" />
+                <data android:pathPattern=".*3GPP" />
+                <data android:pathPattern=".*h264" />
+                <data android:pathPattern=".*H264" />
+                <data android:pathPattern=".*h261" />
+                <data android:pathPattern=".*H261" />
+                <data android:pathPattern=".*h263" />
+                <data android:pathPattern=".*H263" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.anviz.scom.ui.UI05_RegisterActivity" />
+        <activity android:name="com.anviz.scom.ui.UI06_MainActivity" />
+        <activity android:name="com.anviz.scom.ui.UI07_LiveListActivity" />
+        <activity android:name="com.anviz.scom.ui.UI08_PlayBackListActivity" />
+        <activity android:name="com.anviz.scom.ui.UI09_EventManageActivity" />
+        <activity android:name="com.anviz.scom.ui.UI10_EventInfoActivity" />
+        <activity android:name="com.anviz.scom.ui.UI11_FullScreenImageActivity" />
+        <activity android:name="com.anviz.scom.ui.UI12_PlayBackInfoListActivity" />
+        <activity android:name="com.anviz.scom.ui.UI13_EventQueryActivity" />
+        <activity android:name="com.anviz.scom.ui.UI14_EventQueryResult" />
+        <activity android:name="com.anviz.scom.ui.UI15_DeviceManageActivity" />
+        <activity android:name="com.anviz.scom.ui.UI17_AdvancedAddDeviceActivity" />
+        <activity android:name="com.anviz.scom.ui.UI18_FindAddDeviceActivity" />
+        <activity android:name="com.anviz.scom.ui.UI19_DeviceInfoActivity" />
+        <activity android:name="com.anviz.scom.ui.UI20_InfoActivity" />
+        <activity
+            android:name="com.anviz.scom.ui.UI21_OtherManageActivity"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.anviz.scom.ui.UI22_FeatureSetActivity"
+            android:theme="@style/Transparent" />
+    </application>
+
+</manifest>

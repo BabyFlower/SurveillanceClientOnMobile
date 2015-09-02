@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.anviz.scom.view.ListViewCompat
+        android:id="@+id/ui09_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000" />
+
+    <RadioGroup
+        android:id="@+id/ui09_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/ui09_time_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_background"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/time_group" />
+
+        <RadioButton
+            android:id="@+id/ui09_event_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/event_group" />
+
+        <RadioButton
+            android:id="@+id/ui09_device_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/device_group" />
+    </RadioGroup>
+
+</LinearLayout>

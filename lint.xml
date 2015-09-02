@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="DrawAllocation" severity="ignore">
+        <ignore path="src/com/anviz/scom/zxing/view/ViewfinderView.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/anviz/com/AnvizPlayer.java" />
+        <ignore path="src/com/anviz/com/ui/UI03_AnvizPlayerActivity.java" />
+        <ignore path="src/com/anviz/scom/ui/UI03_AnvizPlayerActivity.java" />
+        <ignore path="src/com/anviz/scom/ui/UI08_Adapter.java" />
+        <ignore path="src/com/anviz/scom/ui/UI08_Adapter.java" />
+        <ignore path="src/com/anviz/scom/ui/UI08_Adapter.java" />
+        <ignore path="src/com/anviz/scom/ui/UI09_EventAdapter.java" />
+        <ignore path="src/com/anviz/scom/ui/UI12_Adapter.java" />
+        <ignore path="src/com/anviz/scom/ui/UI13_EventQueryActivity.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="Recycle" severity="ignore">
+        <ignore path="src/com/anviz/scom/view/ListViewCompat.java" />
+    </issue>
+    <issue id="ResourceAsColor" severity="ignore">
+        <ignore path="src/com/anviz/scom/ui/UI09_EventAdapter.java" />
+    </issue>
+    <issue id="SdCardPath">
+        <ignore path="src/com/anviz/com/ui/UI03_AnvizPlayerActivity.java" />
+        <ignore path="src/com/anviz/scom/ui/UI03_AnvizPlayerActivity.java" />
+    </issue>
+    <issue id="ShowToast">
+        <ignore path="src/org/libsdl/app/SDLSurface.java" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore">
+        <ignore path="src/com/anviz/scom/util/DateFormatUtil.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/anviz/scom/ui/UI13_EventFilteringAdapter.java" />
+    </issue>
+    <issue id="Wakelock">
+        <ignore path="src/com/anviz/scom/ui/UI03_AnvizPlayerActivity.java" />
+    </issue>
+</lint>

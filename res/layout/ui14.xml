@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/title_text"
+            android:text="@string/event_query_result" />
+
+        <TextView
+            android:id="@+id/ui14_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ui14_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+    
+    <RadioGroup
+        android:id="@+id/ui14_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/ui14_time_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_background"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/time_group" />
+
+        <RadioButton
+            android:id="@+id/ui14_event_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/event_group" />
+
+        <RadioButton
+            android:id="@+id/ui14_device_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/device_group" />
+    </RadioGroup>
+
+</LinearLayout>

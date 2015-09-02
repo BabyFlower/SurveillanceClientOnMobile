@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.anviz.scom.view.ScrollerItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ui07_adapter_iv"
+            android:layout_width="@dimen/video_width"
+            android:layout_height="@dimen/video_height"
+            android:background="@color/tab_checked"
+            android:contentDescription="@string/description" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ui07_adapter_name"
+                style="@style/small_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/dir"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ui07_adapter_playback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/playback_bg" />
+
+                <ImageView
+                    android:id="@+id/ui07_adapter_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dip"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/event_bg" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="120dip"
+        android:layout_height="fill_parent"
+        android:background="@color/red_warn" >
+
+        <TextView
+            android:id="@+id/ui07_adapter_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/delete_bg"
+            android:text="@string/delete"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</com.anviz.scom.view.ScrollerItemView>

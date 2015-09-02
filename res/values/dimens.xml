@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 小号字体 -->
+    <dimen name="small_text">16sp</dimen>
+    <!-- 中号字体 -->
+    <dimen name="middle_text">20sp</dimen>
+    
+    <!-- 视频图片宽 -->
+    <dimen name="video_width">126dip</dimen>
+	<!-- 视频图片高 -->
+    <dimen name="video_height">84dip</dimen>
+</resources>

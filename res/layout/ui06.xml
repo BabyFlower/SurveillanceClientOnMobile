@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/title_text_main"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/ui06_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ui06_other_manage"
+            android:background="@drawable/query"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ui06_other_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/other_manager" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.anviz.scom.view.UnViewPager
+            android:id="@+id/vPager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:persistentDrawingCache="animation" />
+
+        <RadioGroup
+            android:id="@+id/rg_main_btns"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <RadioButton
+                android:id="@+id/ui06_live"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_tab_background"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/live_bg"
+                android:gravity="center"
+                android:text="@string/Live" />
+
+            <RadioButton
+                android:id="@+id/ui06_playback"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_tab_background"
+                android:button="@null"
+                android:drawableTop="@drawable/playback_bg"
+                android:gravity="center"
+                android:text="@string/PlayBack" />
+
+            <RadioButton
+                android:id="@+id/ui06_event"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_tab_background"
+                android:button="@null"
+                android:drawableTop="@drawable/event_bg"
+                android:gravity="center"
+                android:text="@string/event" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
